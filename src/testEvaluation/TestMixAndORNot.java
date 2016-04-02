@@ -5,11 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.AfterClass;
 import org.junit.Test;
 
-import questionair.absTree.expression.literal.Booleanliteral;
-import questionair.absTree.expression.logical.And;
-import questionair.absTree.expression.logical.Or;
-import questionair.absTree.expression.unary.Not;
-import questionair.evaluation.Value;
+import q.aTree.expr.literal.Booleanliteral;
+import q.aTree.expr.logical.And;
+import q.aTree.expr.logical.Or;
+import q.aTree.expr.unary.Not;
+import q.evaluation.Value;
 
 public class TestMixAndORNot extends TestAbstract{
 

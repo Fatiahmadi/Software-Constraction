@@ -4,14 +4,14 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import questionair.absTree.expression.comparison.Equal;
-import questionair.absTree.expression.comparison.GreaterEqual;
-import questionair.absTree.expression.comparison.GreaterThan;
-import questionair.absTree.expression.comparison.LessEqual;
-import questionair.absTree.expression.comparison.LessThan;
-import questionair.absTree.expression.comparison.NotEqual;
-import questionair.absTree.expression.literal.Integerliteral;
-import questionair.evaluation.Value;
+import q.aTree.expr.comparison.Equal;
+import q.aTree.expr.comparison.GreaterEqual;
+import q.aTree.expr.comparison.GreaterThan;
+import q.aTree.expr.comparison.LessEqual;
+import q.aTree.expr.comparison.LessThan;
+import q.aTree.expr.comparison.NotEqual;
+import q.aTree.expr.literal.Integerliteral;
+import q.evaluation.Value;
 
 public class TestComparison extends TestAbstract {
 

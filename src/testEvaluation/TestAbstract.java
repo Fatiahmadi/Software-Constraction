@@ -4,11 +4,11 @@ package testEvaluation;
 import org.junit.After;
 import org.junit.Before;
 
-import questionair.absTree.expression.AbsExpression;
-import questionair.absTree.expression.literal.Integerliteral;
-import questionair.evaluation.EvalVisitor;
-import questionair.evaluation.ValueSaver;
-import questionair.evaluation.Value;
+import q.aTree.expr.AExpression;
+import q.aTree.expr.literal.Integerliteral;
+import q.evaluation.EvalVisitor;
+import q.evaluation.Value;
+import q.evaluation.ValueSaver;
 
 public class TestAbstract {
 
@@ -22,7 +22,7 @@ public class TestAbstract {
 		eval = new EvalVisitor(valrep); 
 	}
 	
-	public Value evaluate(AbsExpression expression) {
+	public Value evaluate(AExpression expression) {
 		return expression.accept(this.eval);
 	}
 	

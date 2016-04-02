@@ -4,8 +4,8 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
-import questionair.absTree.AstNodeVisitor;
-import questionair.absTree.form.Form;
+import q.aTree.NodeVisitor;
+import q.aTree.form.Form;
 import antlrProducts.QLLexer;
 import antlrProducts.QLParser;
 
@@ -21,7 +21,7 @@ public class AbsSynTreeBuilder {
 
 			// Walk my tree
 			ParseTree tree = parser.form();
-			AstNodeVisitor v = new AstNodeVisitor();
+			NodeVisitor v = new NodeVisitor();
 			Form form = (Form) v.visit(tree);
 
 			// Print AST in console

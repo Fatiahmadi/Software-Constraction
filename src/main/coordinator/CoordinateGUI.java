@@ -1,17 +1,16 @@
 package main.coordinator;
 
-import gui.QFrame;
-
 import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import questionair.absTree.form.Form;
-import questionair.semanticAnalysis.TypeChecking;
-import questionair.semanticAnalysis.error.Error;
-import questionair.semanticAnalysis.error.PopUpError;
-import questionair.semanticAnalysis.error.Warning;
+import q.aTree.form.Form;
+import q.semanticAnalysis.TypeChecking;
+import q.semanticAnalysis.error.Error;
+import q.semanticAnalysis.error.PopUpError;
+import q.semanticAnalysis.error.Warning;
+import user_Interface.QFrame;
 
 //import main.coordinator.CoordinationFiles;
 
@@ -38,7 +37,7 @@ public class CoordinateGUI {
 				final JPanel panel = qF.createFormOnFrame(form);
 				frame.getContentPane().removeAll();
 				frame.getContentPane().add(panel);
-				frame.setTitle(form.getFormIdentifier().toString());
+				frame.setTitle(form.getFormId().toString());
 				frame.pack();
 				frame.setVisible(true);
 			} else {

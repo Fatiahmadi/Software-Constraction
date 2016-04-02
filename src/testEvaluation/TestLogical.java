@@ -4,10 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import questionair.absTree.expression.literal.Booleanliteral;
-import questionair.absTree.expression.logical.And;
-import questionair.absTree.expression.logical.Or;
-import questionair.evaluation.Value;
+import q.aTree.expr.literal.Booleanliteral;
+import q.aTree.expr.logical.And;
+import q.aTree.expr.logical.Or;
+import q.evaluation.Value;
 
 public class TestLogical extends TestAbstract {
 

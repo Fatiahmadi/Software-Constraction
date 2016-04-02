@@ -22,7 +22,7 @@ expression
                      |  STRINGLITERAL                                      #StringLiteral
                      |  INTEGERLITERAL                                      #IntegerLiteral
                      |  IDENTIFIER                                         #identifier
-                     |  NUMBER                                             #number
+                   
                      ;                                            
                      
                      
@@ -31,8 +31,8 @@ STRINGLITERAL        :'"'(ESC | .)*? '"';
 BOOLEANLITERAL       :  'true'
                      |  'false'
                      ;
-INTEGERLITERAL       : DIGIT+ ;
-NUMBER               : '0'..'9'+ ('.' '0'..'9'+)*;
+INTEGERLITERAL       : '0'..'9'+ ('.' '0'..'9'+)*;
+    
 IDENTIFIER          : (LOWERCASE | UPPERCASE) (LOWERCASE | UPPERCASE | DIGIT )*;
 
  LOWERCASE           : [a-z]; 

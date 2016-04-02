@@ -5,11 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.AfterClass;
 import org.junit.Test;
 
-import questionair.absTree.expression.calculation.Division;
-import questionair.absTree.expression.calculation.Sub;
-import questionair.absTree.expression.calculation.Time;
-import questionair.absTree.expression.literal.Integerliteral;
-import questionair.evaluation.Value;
+import q.aTree.expr.calculation.Division;
+import q.aTree.expr.calculation.Sub;
+import q.aTree.expr.calculation.Time;
+import q.aTree.expr.literal.Integerliteral;
+import q.evaluation.Value;
 
 public class TestMixCalculation extends TestAbstract{
 
